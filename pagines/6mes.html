@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head> 
+<title>Muestra portafolio</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="cv" href="pagines/cv.html">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@300&family=Orelega+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="work" class="viives"> 
+               <div class="box-xarxes">
+                  <a href="https://www.tiktok.com/@viives__?lang=es"><img class="png" src="../Images/TikTok.png"></a>
+                   <a href="https://www.instagram.com/viives__/?hl=es"> <img class="png" src="../Images/pngwing.com.png"></a>
+                   
+                   <a href="https://www.behance.net/gerardcortes"><img class="png" src="../Images/PngItem_1903277.png"></a>
+        </div>
+        <h1> ViiVES-MÉS</h1>
+        <div class="V-text"> 
+            <div class="box-flex2">
+                              <!--SLIDER-->
+       
+        <div class="sliderr" id="sliderr">
+            <div class="container-display">
+                <img src="../Images/Portfoli/shoes/1622116456917.jpg" class="alien bigg mySlides">
+                 <img src="../Images/Portfoli/shoes/1622643737104.jpg" class="alien bigg mySlides">
+                  <img src="../Images/Portfoli/shoes/1622643737109.jpg" class="alien bigg mySlides">
+                <img src="../Images/Portfoli/shoes/1622643737099.jpg" class="alien bigg mySlides">
+               
+                <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <!--Script JS-->
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+            </script>
+                            
+
+ 
+
+        
+        </div> 
+              
+               
+                <video src="../videos/TikTok.mp4" class="video-shoes video5" controls></video>
+                   <div>
+                   
+                  <button  class="Vboto-flex actiu " onclick="window.location.href='/index.html';"><a>Home</a></button>
+                  </div>
+            </div>
+        </div>
+    </div>
+     <h3> viives02@gmail.com</h3>
+    <h3> +34 644157195</h3>
+</body>
+</html>
